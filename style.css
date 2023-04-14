@@ -1,0 +1,18 @@
+body {
+	font-family: times; /* set the font family for the body */
+	background-color: #c3dddd; /* set the background color for the body */
+	color: black; /* set the font color for the body */
+}
+
+h1 {
+	font-size: 28px; /* set the font size for the headers */
+	font-weight: bold; /* set the font weight for the headers */
+	margin-top: 0; /* set the top margin for the headers */
+	margin-bottom: 20px; /* set the bottom margin for the headers */
+}
+
+form {
+	display: inline-block; /* set the display to inline-block to place the forms side by side */
+	width: 50%; /* set the width of the forms to 50% to take up half of the page */
+	margin-bottom: 20px; /* set the bottom margin for the forms */
+}

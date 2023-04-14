@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head> <!-- MetaDetails -->
+		<title>Web3Booking</title>
+		<link rel="stylesheet" type="text/css" href="style.css"> <!-- link to a CSS file for styling -->
+	</head>
+	<body> <!-- content -->
+		<div>
+			<h1>Add Room</h1> <!-- header for the form to add a room -->
+			<form action="/add-room" method="POST"> <!-- a form that submits to the /add-room route with the POST method -->
+				<label for="room-number">Room Number :</label>
+				<input type="number" name="roomNumber" id="room-number" required> <!-- input field for the room number with required validation -->
+				<br><br>
+				<label for="beds">Number of beds :</label>
+				<input type="number" name="numberOfBeds" id="beds" required> <!-- input field for the number of beds with required validation -->
+				<br><br>
+				<label for="air-condition">Air Conditioned :</label>
+				<select id="air-condition" name="isAirConditioned" required> <!-- dropdown list for the air conditioning with required validation -->
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</select> <br><br>
+				<label for="prce">Price :</label>
+				<input type="number" name="price" id="price" required> <!-- input field for the price with required validation -->
+				<br><br>
+				<button type="submit">Add Room</button> <!-- submit button to add the room to the system -->
+			</form>
+
+		</div>
+		<div>
+			<h1> View Room Details </h1> <!-- header for the form to view room details -->
+			<form action="/view-room" method="POST"> <!-- a form that submits to the /view-room route with the POST method -->
+				<label for="view-room-number">Room Number :</label>
+				<input type="number" name="viewroomNumber" id="view-room-number" required> <!-- input field for the room number with required validation -->
+				<br>
+				<button type="submit">View Room</button> <!-- submit button to view the room details -->
+			</form>
+		</div>
+		<div>
+			<h1>Book Room</h1> <!-- header for the form to book a room -->
+				<form action="/book-room" method="POST"> <!-- a form that submits to the /book-room route with the POST method -->
+				<label for="book-room-number">Room Number :</label>
+				<input type="number" name="bookroomNumber" id="book-room-number" required> <!-- input field for the room number with required validation -->
+				<br>
+				<button type="submit">Book Room</button> <!-- submit button to book the room -->
+			</form>
+		</div>
+	</body>
+</html>
